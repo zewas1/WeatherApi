@@ -17,7 +17,7 @@ RUN docker-php-ext-enable apcu
 
 WORKDIR /usr/src/app
 
-COPY --chown=1000:1000 testApplication /usr/src/app
+COPY --chown=197609:197609 testApplication /usr/src/app
 
 RUN PATH=$PATH:/usr/src/app/vendor/bin:bin
 

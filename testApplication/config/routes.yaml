@@ -1,7 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\CountryController::new
 
-testApplication:
-  path: /data
-  controller: App\Controller\SubmittedData::test
+#testApplication:
+#  path: /data
+#  controller: App\Controller\SubmittedData::test

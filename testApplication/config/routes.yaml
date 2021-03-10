@@ -2,6 +2,10 @@ index:
     path: /
     controller: App\Controller\CountryController::new
 
+apicall:
+    path: /data
+    controller: App\Controller\ApiCallController::callApi
+
 #testApplication:
 #  path: /data
 #  controller: App\Controller\SubmittedData::test

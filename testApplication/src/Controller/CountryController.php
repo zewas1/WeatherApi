@@ -16,10 +16,13 @@ class CountryController extends AbstractController
         $country = new Country();
         $form = $this->createForm(WeatherForm::class,$country);
 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()){
             $country = $form->getData();
-
-            return $this->redirectToRoute('success');
+//            $form = $this->createFormBuilder($country)
+//                ->setAction($this->generateUrl('/data'))
+//                ->setMethod('GET');
+            return $this->redirectToRoute('/data');
         }
 
         return $this->render('task/new.html.twig', [

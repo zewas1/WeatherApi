@@ -3,18 +3,24 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+
 
 class Country
 {
     /**
-     * @Assert\notBlank
+     * @Assert\NotBlank
+     * @Assert\Type("string")
      */
     protected $country;
 
     /**
-     * @Assert\notBlank
+     * @Assert\NotBlank
+     * @Assert\Type("string")
      */
     protected $api;
+
     protected $weather;
     protected $description;
     protected $id;

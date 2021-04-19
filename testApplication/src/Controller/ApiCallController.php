@@ -5,32 +5,36 @@ namespace App\Controller;
 
 use GuzzleHttp\Client;
 use App\Entity\Country;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 
-class ApiCallController
+class ApiCallController extends AbstractController
 {
-    protected $apiUri = "http://api.openweathermap.org/data/2.5/weather";
-    private $serializer;
-
-    public function callApi($country, $api)
+    /*
+     * @Route("/data", name="call_api", methods={"POST"})
+     */
+    public function post(
+        Request $request
+    )
     {
-        $client = new Client ([
-            'headers'=> ['content-type'=>'application/json'],
-            'Accept'=>'application/json'
-        ]);
 
-        $result = $client->get($this->apiUri, [
-            'query'=>
+        $data = json_decode(
+            $request->getContent(),
+            true
+        );
+
+        exit(\Doctrine\Common\Util\Debug::dump($data));
+
+        return new JsonResponse(
             [
-                'country'=>$country,
-                'appid'=>$api,
-            ]
+                'status' => 'ok',
+            ],
+            JsonResponse::HTTP_CREATED
+        );
 
-    ]);
-        $data = $result->getBody();
-
-        return $this->serializer->deserialize($result, Response::class,'json');
     }
 }

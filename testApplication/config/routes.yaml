@@ -4,7 +4,7 @@ index:
 
 apicall:
     path: /data
-    controller: App\Controller\ApiCallController::callApi
+    controller: App\Controller\ApiCallController::post
 
 #testApplication:
 #  path: /data

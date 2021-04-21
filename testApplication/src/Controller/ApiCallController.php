@@ -3,34 +3,48 @@
 
 namespace App\Controller;
 
-use GuzzleHttp\Client;
+use App\form\WeatherForm;
 use App\Entity\Country;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Serializer\Serializer;
-use Symfony\Component\Serializer\Encoder\JsonEncoder;
 
-class ApiCallController
+class ApiCallController extends AbstractController
 {
-    protected $apiUri = "http://api.openweathermap.org/data/2.5/weather";
-    private $serializer;
-
-    public function callApi($country, $api)
+    /*
+     * @Route("/data", name="call_api", methods={"POST"})
+     */
+    public function post(Request $request)
     {
-        $client = new Client ([
-            'headers'=> ['content-type'=>'application/json'],
-            'Accept'=>'application/json'
-        ]);
+        $body =$request->getContent();
+        $data = json_decode(
+            $body,
+            true
+        );
 
-        $result = $client->get($this->apiUri, [
-            'query'=>
+        $country = new Country();
+        //$country->setCountry("asd");
+        //$country->setApi(12345);
+        $form = $this->createForm(WeatherForm::class, $country);
+
+        $form->submit($data);
+
+        //exit(\Doctrine\Common\Util\Debug::dump($data));
+
+
+//        $em = $this->getDoctrine()->getManager();
+//        $em->persist($country);
+//        $em->flush();
+
+        /*return new JsonResponse(
             [
-                'country'=>$country,
-                'appid'=>$api,
-            ]
+                'status' => 'ok',
+            ],
+            JsonResponse::HTTP_CREATED
+        );*/
 
-    ]);
-        $data = $result->getBody();
+        return new Response('Ok', 201);
 
-        return $this->serializer->deserialize($result, Response::class,'json');
     }
 }

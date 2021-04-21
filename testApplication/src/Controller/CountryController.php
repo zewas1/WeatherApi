@@ -5,6 +5,7 @@ namespace App\Controller;
 
 use App\Entity\Country;
 use App\form\WeatherForm;
+use App\form\FormHandler;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,14 +16,15 @@ class CountryController extends AbstractController
     {
         $country = new Country();
         $form = $this->createForm(WeatherForm::class,$country);
-
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()){
-            $country = $form->getData();
-//            $form = $this->createFormBuilder($country)
-//                ->setAction($this->generateUrl('/data'))
-//                ->setMethod('GET');
-            return $this->redirectToRoute('/data');
+            function __construct (){
+
+            }
+            function formHandler(){
+                $formHandler = new FormHandler();
+                $formHashMap = $formHandler->formHandling();
+            }
         }
 
         return $this->render('task/new.html.twig', [

@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '05132be09a8a6a85dab3afdae34d2bae31b95119',
+    'reference' => 'e0d77065a9cd88354481e239ba43691b774ecd74',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '05132be09a8a6a85dab3afdae34d2bae31b95119',
+      'reference' => 'e0d77065a9cd88354481e239ba43691b774ecd74',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -190,6 +190,15 @@
       array (
       ),
       'reference' => 'b87eda7a7162f95574032da17e9323c9899cb6b2',
+    ),
+    'guzzlehttp/promises' => 
+    array (
+      'pretty_version' => '1.4.1',
+      'version' => '1.4.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8e7d04f1f6450fef59366c399cfad4b9383aa30d',
     ),
     'guzzlehttp/ringphp' => 
     array (

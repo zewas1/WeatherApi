@@ -87,6 +87,9 @@
     "guzzlehttp/guzzle": {
         "version": "7.2.0"
     },
+    "guzzlehttp/promises": {
+        "version": "1.4.1"
+    },
     "guzzlehttp/ringphp": {
         "version": "1.1.1"
     },

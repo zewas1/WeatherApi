@@ -3,38 +3,48 @@
 
 namespace App\Controller;
 
-use GuzzleHttp\Client;
+use App\form\WeatherForm;
 use App\Entity\Country;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Serializer\Serializer;
-use Symfony\Component\Serializer\Encoder\JsonEncoder;
 
 class ApiCallController extends AbstractController
 {
     /*
      * @Route("/data", name="call_api", methods={"POST"})
      */
-    public function post(
-        Request $request
-    )
+    public function post(Request $request)
     {
-
+        $body =$request->getContent();
         $data = json_decode(
-            $request->getContent(),
+            $body,
             true
         );
 
-        exit(\Doctrine\Common\Util\Debug::dump($data));
+        $country = new Country();
+        //$country->setCountry("asd");
+        //$country->setApi(12345);
+        $form = $this->createForm(WeatherForm::class, $country);
 
-        return new JsonResponse(
+        $form->submit($data);
+
+        //exit(\Doctrine\Common\Util\Debug::dump($data));
+
+
+//        $em = $this->getDoctrine()->getManager();
+//        $em->persist($country);
+//        $em->flush();
+
+        /*return new JsonResponse(
             [
                 'status' => 'ok',
             ],
             JsonResponse::HTTP_CREATED
-        );
+        );*/
+
+        return new Response('Ok', 201);
 
     }
 }

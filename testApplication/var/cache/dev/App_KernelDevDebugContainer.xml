@@ -344,6 +344,7 @@
     <service id="App\Controller\DefaultController" class="App\Controller\DefaultController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
     </service>
+    <service id="App\app\testing" class="App\app\testing" autowire="true" autoconfigure="true"/>
     <service id="App\form\EventListener\AddNameField" class="App\form\EventListener\AddNameField" autowire="true" autoconfigure="true">
       <tag name="kernel.event_subscriber"/>
     </service>

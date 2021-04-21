@@ -61,6 +61,10 @@ return [[
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink%5D%5B1%5D' => 2,
 '%5BSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 1,
 '%5B%5BC%5DSymfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CApiCallController%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CApiCallController%5D%5B1%5D' => 2,
+'%5BApp%5CController%5CApiCallController%23post%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CController%5CApiCallController%23post%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CCountryController%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CController%5CCountryController%5D%5B1%5D' => 2,
 '%5BApp%5CController%5CCountryController%23new%5D%5B1%5D' => 1,
@@ -91,8 +95,10 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CCountry%23getWeather%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%23setWeather%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCountry%23setWeather%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CCountry%24country%5D%5B1%5D' => 0,
-'%5BApp%5CEntity%5CCountry%24api%5D%5B1%5D' => 0,
+'%5BApp%5CEntity%5CCountry%24country%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CCountry%24country%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CCountry%24api%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CCountry%24api%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%24weather%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCountry%24weather%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%24description%5D%5B1%5D' => 1,
@@ -640,7 +646,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1615197129,
+2 => 1618819139,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -656,6 +662,35 @@ return [[
         ],
         [
             $o[0],
+        ],
+        []
+    );
+},
+4 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\Validator\\Constraints\\NotBlank'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\NotBlank')),
+            clone ($p['Symfony\\Component\\Validator\\Constraints\\Type'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\Type')),
+        ],
+        null,
+        [
+            'stdClass' => [
+                'groups' => [
+                    [
+                        'Default',
+                    ],
+                    [
+                        'Default',
+                    ],
+                ],
+                'type' => [
+                    1 => 'string',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+            $o[1],
         ],
         []
     );

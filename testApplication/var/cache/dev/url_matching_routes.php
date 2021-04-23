@@ -14,8 +14,9 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/index.php' => [[['_route' => 'app_default_index', '_controller' => 'App\\Controller\\DefaultController::index'], null, null, null, false, false, null]],
-        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\ApiCallController::post'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\CountryController::new'], null, null, null, false, false, null]],
         '/data' => [[['_route' => 'apicall', '_controller' => 'App\\Controller\\ApiCallController::post'], null, null, null, false, false, null]],
+        '/test' => [[['_route' => 'test', '_controller' => 'App\\Controller\\test::test'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

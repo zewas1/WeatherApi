@@ -1,11 +1,15 @@
 index:
     path: /
-    controller: App\Controller\ApiCallController::post
+    controller: App\Controller\CountryController::new
 
 
 apicall:
     path: /data
     controller: App\Controller\ApiCallController::post
+
+test:
+    path: /test
+    controller: App\Controller\test::test
 
 #testApplication:
 #  path: /data

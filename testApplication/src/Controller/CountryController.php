@@ -17,6 +17,7 @@ class CountryController extends AbstractController
         $country = new Country();
         $form = $this->createForm(WeatherForm::class,$country);
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()){
             function __construct (){
 

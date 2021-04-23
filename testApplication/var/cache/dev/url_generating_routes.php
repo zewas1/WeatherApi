@@ -16,6 +16,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app_default_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/index.php']], [], []],
-    'index' => [[], ['_controller' => 'App\\Controller\\ApiCallController::post'], [], [['text', '/']], [], []],
+    'index' => [[], ['_controller' => 'App\\Controller\\CountryController::new'], [], [['text', '/']], [], []],
     'apicall' => [[], ['_controller' => 'App\\Controller\\ApiCallController::post'], [], [['text', '/data']], [], []],
+    'test' => [[], ['_controller' => 'App\\Controller\\test::test'], [], [['text', '/test']], [], []],
 ];

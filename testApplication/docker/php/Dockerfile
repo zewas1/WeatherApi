@@ -12,12 +12,11 @@ RUN apt-get update && \
 apt-get install -y \
 libzip-dev
 
-RUN pecl install xdebug \
-    && docker-php-ext-enable xdebug
-
 RUN docker-php-ext-install zip
 RUN docker-php-ext-enable apcu
 
+RUN pecl install xdebug \
+    && docker-php-ext-enable xdebug
 
 WORKDIR /usr/src/app
 

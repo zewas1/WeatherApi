@@ -41,6 +41,9 @@ class __TwigTemplate_9f1e49e86aaad41885fd672ed2308c59e74b06db12a570f0c412dfd01bf
 
         // line 2
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 2, $this->source); })()), 'form');
+        echo "
+<hr>
+";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -67,6 +70,8 @@ class __TwigTemplate_9f1e49e86aaad41885fd672ed2308c59e74b06db12a570f0c412dfd01bf
     public function getSourceContext()
     {
         return new Source("{# templates/task/new.html.twig #}
-{{ form(form) }}", "task/new.html.twig", "/usr/src/app/templates/task/new.html.twig");
+{{ form(form) }}
+<hr>
+", "task/new.html.twig", "/usr/src/app/templates/task/new.html.twig");
     }
 }

@@ -13,7 +13,7 @@ class Country
      * @Assert\NotBlank
      * @Assert\Type("string")
      */
-    protected $country;
+    protected $city;
 
     /**
      * @Assert\NotBlank
@@ -60,17 +60,17 @@ class Country
     /**
      * @return mixed
      */
-    public function getCountry()
+    public function getCity()
     {
-        return $this->country;
+        return $this->city;
     }
 
     /**
-     * @param mixed $country
+     * @param mixed $city
      */
-    public function setCountry($country): void
+    public function setCity($city): void
     {
-        $this->country = $country;
+        $this->city = $city;
     }
 
     /**

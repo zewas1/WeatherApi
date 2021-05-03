@@ -4,23 +4,23 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128
+class ComposerStaticInit58bf95109df45791f7b158e8a5cbda59
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
-        '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
-        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
-        '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
     );
 
@@ -171,8 +171,8 @@ class ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -568,9 +568,9 @@ class ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
-            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
-            2 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/persistence/lib/Doctrine/Common',
+            2 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -594,6 +594,8 @@ class ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128
         'App\\Controller\\ApiCallController' => __DIR__ . '/../..' . '/src/Controller/ApiCallController.php',
         'App\\Controller\\CountryController' => __DIR__ . '/../..' . '/src/Controller/CountryController.php',
         'App\\Controller\\DefaultController' => __DIR__ . '/../..' . '/src/Controller/DefaultController.php',
+        'App\\Controller\\GuzzleController' => __DIR__ . '/../..' . '/src/Controller/GuzzleController.php',
+        'App\\Controller\\testApiCall' => __DIR__ . '/../..' . '/src/Controller/testApiCall.php',
         'App\\Entity\\Country' => __DIR__ . '/../..' . '/src/Entity/Country.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\form\\EventListener\\AddNameField' => __DIR__ . '/../..' . '/src/form/EventListener/AddNameField.php',
@@ -5466,9 +5468,9 @@ class ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit1e23515aff90dea9b77a7ee5098cf128::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit58bf95109df45791f7b158e8a5cbda59::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit58bf95109df45791f7b158e8a5cbda59::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit58bf95109df45791f7b158e8a5cbda59::$classMap;
 
         }, null, ClassLoader::class);
     }

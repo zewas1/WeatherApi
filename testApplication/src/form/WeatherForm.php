@@ -15,9 +15,9 @@ class WeatherForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('country', TextType::class)
+            ->add('city', TextType::class)
             ->add('api', TextType::class)
-            ->add('save', SubmitType::class, ['label' =>'save country']);
+            ->add('save', SubmitType::class, ['label' =>'save data']);
 
     }
 

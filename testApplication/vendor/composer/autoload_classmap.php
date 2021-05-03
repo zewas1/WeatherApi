@@ -9,6 +9,8 @@ return array(
     'App\\Controller\\ApiCallController' => $baseDir . '/src/Controller/ApiCallController.php',
     'App\\Controller\\CountryController' => $baseDir . '/src/Controller/CountryController.php',
     'App\\Controller\\DefaultController' => $baseDir . '/src/Controller/DefaultController.php',
+    'App\\Controller\\GuzzleController' => $baseDir . '/src/Controller/GuzzleController.php',
+    'App\\Controller\\testApiCall' => $baseDir . '/src/Controller/testApiCall.php',
     'App\\Entity\\Country' => $baseDir . '/src/Entity/Country.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'App\\form\\EventListener\\AddNameField' => $baseDir . '/src/form/EventListener/AddNameField.php',

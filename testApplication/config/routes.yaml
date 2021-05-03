@@ -5,12 +5,9 @@ index:
 
 apicall:
     path: /data
-    controller: App\Controller\ApiCallController::post
+    controller: App\Controller\GuzzleController::new
 
-test:
-    path: /test
-    controller: App\Controller\test::test
+#test:
+#    path: /test
+#    controller:  App\Controller\testApiCall::newAction
 
-#testApplication:
-#  path: /data
-#  controller: App\Controller\SubmittedData::test

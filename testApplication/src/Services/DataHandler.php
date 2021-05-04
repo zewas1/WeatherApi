@@ -3,20 +3,31 @@
 
 namespace App\Services;
 
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+
+
 
 class DataHandler
 {
-    private $baseUrl;
-    private $api;
+    /**
+     * @var ParameterBagInterface
+     */
+    private $params;
 
-    public function __construct ($baseUrl, $api){
-        $this->baseUrl = $baseUrl;
-        $this->api = $api;
+
+    public function __construct (ParameterBagInterface $params){
+        $this->params=$params;
     }
 
-    public function get($api){
+    public function getApiValue(){
+        $apiValue = $this->params->get('api');
 
-        if ($api === $this->$api)
-        return "Get from API: " . $api;
+        return $apiValue;
+    }
+
+    public function getUrlValue(){
+        $urlValue = $this->params->get('base_url');
+
+        return $urlValue;
     }
 }

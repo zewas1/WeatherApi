@@ -4,6 +4,7 @@
 namespace App\Repository;
 
 use GuzzleHttp\Client as HttpClient;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 
 class Client
@@ -11,33 +12,41 @@ class Client
     private $url;
     private $api;
 
-    public function __constructor ($url, $api){
-        $this->url=$url;
-        $this->api=$api;
+    public function __construct($url, $api)
+    {
+        $this->url = $url;
+        $this->api = $api;
     }
 
-    /*
-    public function getUrlValue(){
-        return $this->url->get('base_url');
+    public function getUrlValue()
+    {
+        return $this->url;
     }
-    public function apiValue(){
-        return $this->api->get('api');
+
+    public function apiValue()
+    {
+        return $this->api;
     }
-    */
+
 
     public function getClient()
     {
-        //$baseUrl=$this->getUrlValue();
+        $baseUrl = $this->getUrlValue();
+        var_dump($baseUrl);
 
+        #return new HttpClient([
+        #    'base_url'=>'http://api.openweathermap.org'
+        #]);
         return new HttpClient([
-            'base_url'=>'http://api.openweathermap.org'
+            'base_url' => $baseUrl
         ]);
     }
 
-    public function urlBuilder($city){
+    public function urlBuilder($city)
+    {
         //var_dump($city);
-        //$api = $this->apiValue();
-        $api = "11cebf838c424532085db58ef1790b80";
+        $api = $this->apiValue();
+        //$api = "11cebf838c424532085db58ef1790b80";
         return "/data/2.5/weather?q=" . $city . "&appid=" . $api . "&units=metric";
     }
 }

@@ -3,7 +3,16 @@ parameters:
   api: '%env(string:API_KEY)%'
 
 services:
-  weather_service:
-    class: App\Repository\ClientClass
-      arguments:
-        - '%base_url%'
+  weather.client:
+    class: App\Repository\Client
+    arguments:
+      - '%base_url%'
+      - '%api%'
+
+  weather.communicator:
+    class: App\Repository\Communicator
+    arguments:
+      - '@weather.client'
+
+  App\Repository\Client: '@weather.client'
+  App\Repository\Communicator: '@weather.communicator'

@@ -258,7 +258,7 @@ class __TwigTemplate_988d7dfda321adda8a8b5dfb6759ea44d1fb3ad3eede152d9fbff048ef0
             if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {
                 /* Flag as complete because finishAjaxRequest can be called multiple times. */
                 request.toolbarReplaceFinished = true;
-                /* Search up through the DOM to find the toolbar's container ID. */
+                /* Search up through the DOM to find the toolbar's Container ID. */
                 for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {
                     if (elem.id.match(/^sfwdt/)) {
                         Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);
@@ -1124,7 +1124,7 @@ class __TwigTemplate_988d7dfda321adda8a8b5dfb6759ea44d1fb3ad3eede152d9fbff048ef0
             if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {
                 /* Flag as complete because finishAjaxRequest can be called multiple times. */
                 request.toolbarReplaceFinished = true;
-                /* Search up through the DOM to find the toolbar's container ID. */
+                /* Search up through the DOM to find the toolbar's Container ID. */
                 for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {
                     if (elem.id.match(/^sfwdt/)) {
                         Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);

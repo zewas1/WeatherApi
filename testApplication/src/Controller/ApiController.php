@@ -4,30 +4,30 @@
 namespace App\Controller;
 
 
+use App\Repository\Client;
 use App\Services\DataHandler;
-use GuzzleHttp\Client;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use App\Repository\Communicator;
+use Symfony\Component\HttpFoundation\Request;
 
-class GuzzleController
+
+class ApiController
 {
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
 
-    public function new(DataHandler $dataHandler, $city)
+    public function new(Request $request , Communicator $communicator)
     {
-        $baseUrl = $dataHandler->getUrlValue();
-        $api = $dataHandler->getApiValue();
-        $client = new Client([
-            'base_url'=> $baseUrl
-        ]);
+        $city = $request->query->get('city');
 
         #$client->post('/data/2.5/weather?q=London&appid=11cebf838c424532085db58ef1790b80&units=metric', [
         #    'debug'=>true
         #]);
 
-        $callUrl = "/data/2.5/weather?q=" . $city[0] . "&appid=" . $api . "&units=metric";
-
-        $response = $client->post($callUrl);
+        $response = $communicator->postRequest($city);
         $json=$response->json();
         return new JsonResponse(array('response data'=>$json));
     }
-
 }

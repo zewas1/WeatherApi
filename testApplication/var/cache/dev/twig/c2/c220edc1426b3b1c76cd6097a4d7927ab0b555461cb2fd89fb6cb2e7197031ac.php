@@ -407,7 +407,7 @@ class __TwigTemplate_68158c8d90330062472d1c90db60ea5084d26a02aed2ea33a56ea397f78
             // line 140
             echo twig_escape_filter($this->env, (isset($context["compilerLogTotal"]) || array_key_exists("compilerLogTotal", $context) ? $context["compilerLogTotal"] : (function () { throw new RuntimeError('Variable "compilerLogTotal" does not exist.', 140, $this->source); })()), "html", null, true);
             echo "</span></h3>
-                <p class=\"text-muted\">Log messages generated during the compilation of the service container.</p>
+                <p class=\"text-muted\">Log messages generated during the compilation of the service Container.</p>
 
                 <div class=\"tab-content\">
                     ";
@@ -976,7 +976,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206), "WARNING"
             {% endfor %}
             <div class=\"tab\">
                 <h3 class=\"tab-title\">Container <span class=\"badge\">{{ compilerLogTotal }}</span></h3>
-                <p class=\"text-muted\">Log messages generated during the compilation of the service container.</p>
+                <p class=\"text-muted\">Log messages generated during the compilation of the service Container.</p>
 
                 <div class=\"tab-content\">
                     {% if collector.compilerLogs is empty %}

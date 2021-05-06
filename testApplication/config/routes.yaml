@@ -5,7 +5,7 @@ index:
 
 apicall:
     path: /data
-    controller: App\Controller\GuzzleController::new
+    controller: App\Controller\ApiController::new
 
 #test:
 #    path: /test

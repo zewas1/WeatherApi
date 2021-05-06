@@ -556,14 +556,14 @@ tr.status-warning td {
 
 ";
         // line 521
-        echo ".container {
+        echo ".Container {
     max-width: 1300px;
     padding-right: 15px;
 }
 #header {
     flex: 0 0 auto;
 }
-#header .container {
+#header .Container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1284,7 +1284,7 @@ tr.status-warning td {
 
 ";
         // line 1249
-        echo "body.width-full .container {
+        echo "body.width-full .Container {
     max-width: 100%;
 }
 
@@ -1849,14 +1849,14 @@ tr.status-warning td {
 
 {# Layout
    ========================================================================= #}
-.container {
+.Container {
     max-width: 1300px;
     padding-right: 15px;
 }
 #header {
     flex: 0 0 auto;
 }
-#header .container {
+#header .Container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2577,7 +2577,7 @@ pre.sf-dump, pre.sf-dump .sf-dump-default {
 
 {# Config Options
    ========================================================================= #}
-body.width-full .container {
+body.width-full .Container {
     max-width: 100%;
 }
 
@@ -2601,6 +2601,6 @@ body.theme-light #collector-content .sf-dump-ellipsis-path { max-width: 5em; }
 body.theme-light #collector-content .sf-dump .trace li.selected {
     background: rgba(255, 255, 153, 0.5);
 }
-", "@WebProfiler/Profiler/profiler.css.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\profiler.css.twig");
+", "@WebProfiler/Profiler/profiler.css.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\profiler.css.twig");
     }
 }

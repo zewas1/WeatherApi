@@ -48,15 +48,15 @@ class __TwigTemplate_774f86dcc9bc434673feea4c28ae20355684411bcd5ed436835a7cfd70d
     background: #f3f3f3;
 }
 
-.container.body_alert {
+.Container.body_alert {
     border-top: 8px solid #ec5840;
 }
 
-.container.body_warning {
+.Container.body_warning {
     border-top: 8px solid #ffae00;
 }
 
-.container.body_default {
+.Container.body_default {
     border-top: 8px solid #aaaaaa;
 }
 ";
@@ -88,17 +88,17 @@ class __TwigTemplate_774f86dcc9bc434673feea4c28ae20355684411bcd5ed436835a7cfd70d
     background: #f3f3f3;
 }
 
-.container.body_alert {
+.Container.body_alert {
     border-top: 8px solid #ec5840;
 }
 
-.container.body_warning {
+.Container.body_warning {
     border-top: 8px solid #ffae00;
 }
 
-.container.body_default {
+.Container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
+", "@email/zurb_2/notification/local.css", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
     }
 }

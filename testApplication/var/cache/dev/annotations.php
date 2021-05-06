@@ -83,10 +83,10 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CCountry%23getDescription%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%23setDescription%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCountry%23setDescription%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CCountry%23getCountry%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CEntity%5CCountry%23getCountry%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CCountry%23setCountry%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CEntity%5CCountry%23setCountry%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CCountry%23getCity%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CCountry%23getCity%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CCountry%23setCity%5D%5B1%5D' => 1,
+'%5B%5BC%5DApp%5CEntity%5CCountry%23setCity%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%23getApi%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCountry%23getApi%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%23setApi%5D%5B1%5D' => 1,
@@ -95,8 +95,8 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CCountry%23getWeather%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%23setWeather%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CCountry%23setWeather%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CCountry%24country%5D%5B1%5D' => 4,
-'%5B%5BC%5DApp%5CEntity%5CCountry%24country%5D%5B1%5D' => 2,
+'%5BApp%5CEntity%5CCountry%24city%5D%5B1%5D' => 4,
+'%5B%5BC%5DApp%5CEntity%5CCountry%24city%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%24api%5D%5B1%5D' => 4,
 '%5B%5BC%5DApp%5CEntity%5CCountry%24api%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CCountry%24weather%5D%5B1%5D' => 1,
@@ -646,7 +646,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1618819139,
+2 => 1620223416,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [

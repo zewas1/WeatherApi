@@ -210,7 +210,7 @@ class __TwigTemplate_66c486584603737719a033d84a6aa92f6c274831194fd43bb572a25c5e6
             border: 0;
             padding: 0;
         }
-        #tree-details-container {
+        #tree-details-Container {
             border-left: 1px solid #DDD;
             margin-left: 250px;
             padding-left: 20px;
@@ -395,7 +395,7 @@ class __TwigTemplate_66c486584603737719a033d84a6aa92f6c274831194fd43bb572a25c5e6
             echo "            </ul>
         </div>
 
-        <div id=\"tree-details-container\">
+        <div id=\"tree-details-Container\">
             ";
             // line 219
             $context['_parent'] = $context;
@@ -1414,7 +1414,7 @@ class __TwigTemplate_66c486584603737719a033d84a6aa92f6c274831194fd43bb572a25c5e6
             border: 0;
             padding: 0;
         }
-        #tree-details-container {
+        #tree-details-Container {
             border-left: 1px solid #DDD;
             margin-left: 250px;
             padding-left: 20px;
@@ -1567,7 +1567,7 @@ class __TwigTemplate_66c486584603737719a033d84a6aa92f6c274831194fd43bb572a25c5e6
             </ul>
         </div>
 
-        <div id=\"tree-details-container\">
+        <div id=\"tree-details-Container\">
             {% for formName, formData in collector.data.forms %}
                 {{ form_tree_details(formName, formData, collector.data.forms_by_hash, loop.first) }}
             {% endfor %}
@@ -2080,6 +2080,6 @@ class __TwigTemplate_66c486584603737719a033d84a6aa92f6c274831194fd43bb572a25c5e6
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/form.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
+", "@WebProfiler/Collector/form.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\form.html.twig");
     }
 }

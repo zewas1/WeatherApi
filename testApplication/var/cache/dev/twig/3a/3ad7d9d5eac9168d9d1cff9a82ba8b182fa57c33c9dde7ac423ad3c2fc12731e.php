@@ -70,7 +70,7 @@ class __TwigTemplate_27a53611aa2c57e09ca7e5dd29603c236a80d1a24b0bb2c0ba28ce2070e
 
         // line 12
         echo "    <div class=\"status\">
-        <div class=\"container\">
+        <div class=\"Container\">
             <h2>Profile Search</h2>
         </div>
     </div>
@@ -275,7 +275,7 @@ class __TwigTemplate_27a53611aa2c57e09ca7e5dd29603c236a80d1a24b0bb2c0ba28ce2070e
 
 {% block summary %}
     <div class=\"status\">
-        <div class=\"container\">
+        <div class=\"Container\">
             <h2>Profile Search</h2>
         </div>
     </div>
@@ -330,6 +330,6 @@ class __TwigTemplate_27a53611aa2c57e09ca7e5dd29603c236a80d1a24b0bb2c0ba28ce2070e
     {% endif %}
 
 {% endblock %}
-", "@WebProfiler/Profiler/results.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\results.html.twig");
+", "@WebProfiler/Profiler/results.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\results.html.twig");
     }
 }

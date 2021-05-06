@@ -22,7 +22,7 @@ class CountryController extends AbstractController
         //$api = $form ["api"]->getData();
 
         if ($form->isSubmitted() && $form->isValid()){
-            return $this ->forward('App\Controller\GuzzleController::new',[
+            return $this ->forward('App\Controller\ApiController::new',[
                 'city'=>[$city]
             ]);
             //return $this ->redirectToRoute('apicall',['city'=>[$city], 'api'=>[$api]]);

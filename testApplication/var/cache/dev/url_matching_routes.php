@@ -15,7 +15,7 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/index.php' => [[['_route' => 'app_default_index', '_controller' => 'App\\Controller\\DefaultController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\CountryController::new'], null, null, null, false, false, null]],
-        '/data' => [[['_route' => 'apicall', '_controller' => 'App\\Controller\\GuzzleController::new'], null, null, null, false, false, null]],
+        '/data' => [[['_route' => 'apicall', '_controller' => 'App\\Controller\\ApiController::new'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

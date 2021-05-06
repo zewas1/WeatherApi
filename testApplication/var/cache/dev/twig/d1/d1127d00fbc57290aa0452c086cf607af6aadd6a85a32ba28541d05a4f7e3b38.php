@@ -68,7 +68,7 @@ class __TwigTemplate_0970d5375880dd908e882a804164fdd772e517d7bcabff7cff3f195d7a4
     opacity: 1;
     visibility: visible;
 }
-.modal-wrap .modal-container {
+.modal-wrap .modal-Container {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
     color: var(--base-6);
     margin: 1em;
@@ -149,7 +149,7 @@ class __TwigTemplate_0970d5375880dd908e882a804164fdd772e517d7bcabff7cff3f195d7a4
 <a href=\"#\" id=\"open-settings\">Settings</a>
 
 <div class=\"modal-wrap\" id=\"profiler-settings\">
-    <div class=\"modal-container\">
+    <div class=\"modal-Container\">
         <div class=\"modal-header\">
             <h3>Configuration Settings</h3>
             <button class=\"close-modal\">&times;</button>
@@ -267,7 +267,7 @@ class __TwigTemplate_0970d5375880dd908e882a804164fdd772e517d7bcabff7cff3f195d7a4
     opacity: 1;
     visibility: visible;
 }
-.modal-wrap .modal-container {
+.modal-wrap .modal-Container {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
     color: var(--base-6);
     margin: 1em;
@@ -348,7 +348,7 @@ class __TwigTemplate_0970d5375880dd908e882a804164fdd772e517d7bcabff7cff3f195d7a4
 <a href=\"#\" id=\"open-settings\">Settings</a>
 
 <div class=\"modal-wrap\" id=\"profiler-settings\">
-    <div class=\"modal-container\">
+    <div class=\"modal-Container\">
         <div class=\"modal-header\">
             <h3>Configuration Settings</h3>
             <button class=\"close-modal\">&times;</button>
@@ -417,6 +417,6 @@ class __TwigTemplate_0970d5375880dd908e882a804164fdd772e517d7bcabff7cff3f195d7a4
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\settings.html.twig");
     }
 }

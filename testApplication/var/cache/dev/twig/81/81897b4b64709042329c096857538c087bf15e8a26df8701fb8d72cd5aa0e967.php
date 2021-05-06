@@ -74,7 +74,7 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
         echo "    <div class=\"status status-";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 12, $this->source); })()), (isset($context["about"]) || array_key_exists("about", $context) ? $context["about"] : (function () { throw new RuntimeError('Variable "about" does not exist.', 12, $this->source); })()), [], "array", false, false, false, 12), "status", [], "any", false, false, false, 12), "html", null, true);
         echo "\">
-        <div class=\"container\">
+        <div class=\"Container\">
             <h2>";
         // line 14
         echo twig_escape_filter($this->env, twig_title_string_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new RuntimeError('Variable "messages" does not exist.', 14, $this->source); })()), (isset($context["about"]) || array_key_exists("about", $context) ? $context["about"] : (function () { throw new RuntimeError('Variable "about" does not exist.', 14, $this->source); })()), [], "array", false, false, false, 14), "status", [], "any", false, false, false, 14)), "html", null, true);
@@ -146,7 +146,7 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
 
 {% block summary %}
     <div class=\"status status-{{ messages[about].status }}\">
-        <div class=\"container\">
+        <div class=\"Container\">
             <h2>{{ messages[about].status|title }}</h2>
         </div>
     </div>
@@ -156,6 +156,6 @@ array_key_exists("token", $context)) ? (_twig_default_filter((isset($context["to
     <h2>{{ messages[about].title }}</h2>
     <p>{{ messages[about].message }}</p>
 {% endblock %}
-", "@WebProfiler/Profiler/info.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
+", "@WebProfiler/Profiler/info.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\info.html.twig");
     }
 }

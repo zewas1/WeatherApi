@@ -146,7 +146,7 @@ table.body {
     width: 100%;
 }
 
-table.container {
+table.Container {
     background: #fefefe;
     width: 580px;
     margin: 0 auto;
@@ -168,7 +168,7 @@ table.spacer td {
     mso-line-height-rule: exactly;
 }
 
-table.container table.row {
+table.Container table.row {
     display: table;
 }
 
@@ -841,7 +841,7 @@ th.expander {
     padding: 0 !important;
 }
 
-table.container.radius {
+table.Container.radius {
     border-radius: 0;
     border-collapse: separate;
 }
@@ -997,27 +997,27 @@ th.float-center {
     }
 }
 
-table.body table.container .hide-for-large * {
+table.body table.Container .hide-for-large * {
     mso-hide: all;
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .hide-for-large,
-    table.body table.container .row.hide-for-large {
+    table.body table.Container .hide-for-large,
+    table.body table.Container .row.hide-for-large {
         display: table !important;
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .callout-inner.hide-for-large {
+    table.body table.Container .callout-inner.hide-for-large {
         display: table-cell !important;
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .show-for-large {
+    table.body table.Container .show-for-large {
         display: none !important;
         width: 0;
         mso-hide: all;
@@ -1512,7 +1512,7 @@ body.outlook p {
     table.body center {
         min-width: 0 !important;
     }
-    table.body .container {
+    table.body .Container {
         width: 95% !important;
     }
     table.body .columns,
@@ -1834,7 +1834,7 @@ table.body {
     width: 100%;
 }
 
-table.container {
+table.Container {
     background: #fefefe;
     width: 580px;
     margin: 0 auto;
@@ -1856,7 +1856,7 @@ table.spacer td {
     mso-line-height-rule: exactly;
 }
 
-table.container table.row {
+table.Container table.row {
     display: table;
 }
 
@@ -2529,7 +2529,7 @@ th.expander {
     padding: 0 !important;
 }
 
-table.container.radius {
+table.Container.radius {
     border-radius: 0;
     border-collapse: separate;
 }
@@ -2685,27 +2685,27 @@ th.float-center {
     }
 }
 
-table.body table.container .hide-for-large * {
+table.body table.Container .hide-for-large * {
     mso-hide: all;
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .hide-for-large,
-    table.body table.container .row.hide-for-large {
+    table.body table.Container .hide-for-large,
+    table.body table.Container .row.hide-for-large {
         display: table !important;
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .callout-inner.hide-for-large {
+    table.body table.Container .callout-inner.hide-for-large {
         display: table-cell !important;
         width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 596px) {
-    table.body table.container .show-for-large {
+    table.body table.Container .show-for-large {
         display: none !important;
         width: 0;
         mso-hide: all;
@@ -3200,7 +3200,7 @@ body.outlook p {
     table.body center {
         min-width: 0 !important;
     }
-    table.body .container {
+    table.body .Container {
         width: 95% !important;
     }
     table.body .columns,
@@ -3395,6 +3395,6 @@ body.outlook p {
         min-width: 0;
     }
 }
-", "@email/zurb_2/main.css", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\main.css");
+", "@email/zurb_2/main.css", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\main.css");
     }
 }

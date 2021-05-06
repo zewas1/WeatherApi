@@ -78,7 +78,7 @@ class __TwigTemplate_ef7d6a8859fc781678adbb3462ddc90e5065722a9e92da4c6d4fe76caee
         // line 93
         echo "    </div>
 
-    <div id=\"content\" class=\"container\">
+    <div id=\"content\" class=\"Container\">
         <div id=\"main\">
             <div id=\"sidebar\">
                 <div id=\"sidebar-shortcuts\">
@@ -262,7 +262,7 @@ class __TwigTemplate_ef7d6a8859fc781678adbb3462ddc90e5065722a9e92da4c6d4fe76caee
             // line 13
             echo twig_escape_filter($this->env, (isset($context["css_class"]) || array_key_exists("css_class", $context) ? $context["css_class"] : (function () { throw new RuntimeError('Variable "css_class" does not exist.', 13, $this->source); })()), "html", null, true);
             echo "\">
-                    <div class=\"container\">
+                    <div class=\"Container\">
                         <h2 class=\"break-long-words\">
                             ";
             // line 16
@@ -502,7 +502,7 @@ class __TwigTemplate_ef7d6a8859fc781678adbb3462ddc90e5065722a9e92da4c6d4fe76caee
                 {% set css_class = status_code > 399 ? 'status-error' : status_code > 299 ? 'status-warning' : 'status-success' %}
 
                 <div class=\"status {{ css_class }}\">
-                    <div class=\"container\">
+                    <div class=\"Container\">
                         <h2 class=\"break-long-words\">
                             {% if profile.method|upper in ['GET', 'HEAD'] %}
                                 <a href=\"{{ profile.url }}\">{{ profile.url }}</a>
@@ -583,7 +583,7 @@ class __TwigTemplate_ef7d6a8859fc781678adbb3462ddc90e5065722a9e92da4c6d4fe76caee
         {% endblock %}
     </div>
 
-    <div id=\"content\" class=\"container\">
+    <div id=\"content\" class=\"Container\">
         <div id=\"main\">
             <div id=\"sidebar\">
                 <div id=\"sidebar-shortcuts\">

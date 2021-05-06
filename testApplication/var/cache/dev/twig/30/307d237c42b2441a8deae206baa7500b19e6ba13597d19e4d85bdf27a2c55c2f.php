@@ -407,7 +407,7 @@ class __TwigTemplate_b761ce3d68e8eaaae302c662609b9c6ee990eb58c669f0226d22139f567
             // line 140
             echo twig_escape_filter($this->env, (isset($context["compilerLogTotal"]) || array_key_exists("compilerLogTotal", $context) ? $context["compilerLogTotal"] : (function () { throw new RuntimeError('Variable "compilerLogTotal" does not exist.', 140, $this->source); })()), "html", null, true);
             echo "</span></h3>
-                <p class=\"text-muted\">Log messages generated during the compilation of the service container.</p>
+                <p class=\"text-muted\">Log messages generated during the compilation of the service Container.</p>
 
                 <div class=\"tab-content\">
                     ";
@@ -976,7 +976,7 @@ $context["log"], "priorityName", [], "any", false, false, false, 206) == "WARNIN
             {% endfor %}
             <div class=\"tab\">
                 <h3 class=\"tab-title\">Container <span class=\"badge\">{{ compilerLogTotal }}</span></h3>
-                <p class=\"text-muted\">Log messages generated during the compilation of the service container.</p>
+                <p class=\"text-muted\">Log messages generated during the compilation of the service Container.</p>
 
                 <div class=\"tab-content\">
                     {% if collector.compilerLogs is empty %}
@@ -1099,6 +1099,6 @@ $context["log"], "priorityName", [], "any", false, false, false, 206) == "WARNIN
         {% endif %}
     {% endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/logger.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\logger.html.twig");
+", "@WebProfiler/Collector/logger.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\logger.html.twig");
     }
 }

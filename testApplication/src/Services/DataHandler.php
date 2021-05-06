@@ -9,25 +9,23 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 class DataHandler
 {
+
     /**
      * @var ParameterBagInterface
      */
-    private $params;
+        private $params;
 
 
-    public function __construct (ParameterBagInterface $params){
-        $this->params=$params;
-    }
+        public function __construct (ParameterBagInterface $params){
+            $this->params=$params;
+        }
 
-    public function getApiValue(){
-        $apiValue = $this->params->get('api');
+        public function getApiValue(){
+            return $this->params->get('api');
+        }
 
-        return $apiValue;
-    }
+        public function getUrlValue(){
+            return $this->params->get('base_url');
+        }
 
-    public function getUrlValue(){
-        $urlValue = $this->params->get('base_url');
-
-        return $urlValue;
-    }
 }

@@ -40,12 +40,12 @@ class __TwigTemplate_93e6286e67b388ed7737a1a511f4bb650ed991f675e7f81dbc116420af2
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/exception.css.twig"));
 
         // line 1
-        echo ".container {
+        echo ".Container {
     max-width: auto;
     margin: 0;
     padding: 0;
 }
-.container .container {
+.Container .Container {
     padding: 0;
 }
 
@@ -69,7 +69,7 @@ class __TwigTemplate_93e6286e67b388ed7737a1a511f4bb650ed991f675e7f81dbc116420af2
     display: none;
 }
 
-.exception-message-wrapper .container {
+.exception-message-wrapper .Container {
     min-height: auto;
 }
 ";
@@ -93,12 +93,12 @@ class __TwigTemplate_93e6286e67b388ed7737a1a511f4bb650ed991f675e7f81dbc116420af2
 
     public function getSourceContext()
     {
-        return new Source(".container {
+        return new Source(".Container {
     max-width: auto;
     margin: 0;
     padding: 0;
 }
-.container .container {
+.Container .Container {
     padding: 0;
 }
 
@@ -122,9 +122,9 @@ class __TwigTemplate_93e6286e67b388ed7737a1a511f4bb650ed991f675e7f81dbc116420af2
     display: none;
 }
 
-.exception-message-wrapper .container {
+.exception-message-wrapper .Container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\exception.css.twig");
     }
 }

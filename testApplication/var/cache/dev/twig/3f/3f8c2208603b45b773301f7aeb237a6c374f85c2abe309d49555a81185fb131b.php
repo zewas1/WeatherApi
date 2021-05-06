@@ -258,7 +258,7 @@ class __TwigTemplate_ab3ea1a571b4dea0f32b7d0cccc8bcae02083bfcbe92b5f08fbfbf33186
             if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {
                 /* Flag as complete because finishAjaxRequest can be called multiple times. */
                 request.toolbarReplaceFinished = true;
-                /* Search up through the DOM to find the toolbar's container ID. */
+                /* Search up through the DOM to find the toolbar's Container ID. */
                 for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {
                     if (elem.id.match(/^sfwdt/)) {
                         Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);
@@ -1124,7 +1124,7 @@ class __TwigTemplate_ab3ea1a571b4dea0f32b7d0cccc8bcae02083bfcbe92b5f08fbfbf33186
             if (request.toolbarReplace && !request.toolbarReplaceFinished && request.profile) {
                 /* Flag as complete because finishAjaxRequest can be called multiple times. */
                 request.toolbarReplaceFinished = true;
-                /* Search up through the DOM to find the toolbar's container ID. */
+                /* Search up through the DOM to find the toolbar's Container ID. */
                 for (var elem = request.DOMNode; elem && elem !== document; elem = elem.parentNode) {
                     if (elem.id.match(/^sfwdt/)) {
                         Sfjs.loadToolbar(elem.id.replace(/^sfwdt/, ''), request.profile);
@@ -1720,6 +1720,6 @@ class __TwigTemplate_ab3ea1a571b4dea0f32b7d0cccc8bcae02083bfcbe92b5f08fbfbf33186
     });
 
 /*]]>*/</script>
-", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
+", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
     }
 }

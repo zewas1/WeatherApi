@@ -17,5 +17,5 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app_default_index' => [[], ['_controller' => 'App\\Controller\\DefaultController::index'], [], [['text', '/index.php']], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\CountryController::new'], [], [['text', '/']], [], []],
-    'apicall' => [[], ['_controller' => 'App\\Controller\\GuzzleController::new'], [], [['text', '/data']], [], []],
+    'apicall' => [[], ['_controller' => 'App\\Controller\\ApiController::new'], [], [['text', '/data']], [], []],
 ];

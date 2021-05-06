@@ -210,7 +210,7 @@ class __TwigTemplate_e7117b94b6c44519458f70b275210b71cb976488c337fe693a8e71ce72f
             border: 0;
             padding: 0;
         }
-        #tree-details-container {
+        #tree-details-Container {
             border-left: 1px solid #DDD;
             margin-left: 250px;
             padding-left: 20px;
@@ -395,7 +395,7 @@ class __TwigTemplate_e7117b94b6c44519458f70b275210b71cb976488c337fe693a8e71ce72f
             echo "            </ul>
         </div>
 
-        <div id=\"tree-details-container\">
+        <div id=\"tree-details-Container\">
             ";
             // line 219
             $context['_parent'] = $context;
@@ -1414,7 +1414,7 @@ class __TwigTemplate_e7117b94b6c44519458f70b275210b71cb976488c337fe693a8e71ce72f
             border: 0;
             padding: 0;
         }
-        #tree-details-container {
+        #tree-details-Container {
             border-left: 1px solid #DDD;
             margin-left: 250px;
             padding-left: 20px;
@@ -1567,7 +1567,7 @@ class __TwigTemplate_e7117b94b6c44519458f70b275210b71cb976488c337fe693a8e71ce72f
             </ul>
         </div>
 
-        <div id=\"tree-details-container\">
+        <div id=\"tree-details-Container\">
             {% for formName, formData in collector.data.forms %}
                 {{ form_tree_details(formName, formData, collector.data.forms_by_hash, loop.first) }}
             {% endfor %}

@@ -303,8 +303,8 @@ class __TwigTemplate_b7e9126015d23bb66fadfcca172ad9960b2af2030a56924277cf61ec91f
 
         // line 95
         echo "    <style>
-        .time-container { position: relative; }
-        .time-container .nowrap { position: relative; z-index: 1; text-shadow: 0 0 2px #fff; }
+        .time-Container { position: relative; }
+        .time-Container .nowrap { position: relative; z-index: 1; text-shadow: 0 0 2px #fff; }
         .time-bar { display: block; position: absolute; top: 0; left: 0; bottom: 0; background: #e0e0e0; }
         .sql-runnable.sf-toggle-content.sf-toggle-visible { display: flex; flex-direction: column; }
         .sql-runnable button { align-self: end; }
@@ -512,7 +512,7 @@ class __TwigTemplate_b7e9126015d23bb66fadfcca172ad9960b2af2030a56924277cf61ec91f
                     // line 181
                     if ((isset($context["group_queries"]) || array_key_exists("group_queries", $context) ? $context["group_queries"] : (function () { throw new RuntimeError('Variable "group_queries" does not exist.', 181, $this->source); })())) {
                         // line 182
-                        echo "                                <td class=\"time-container\">
+                        echo "                                <td class=\"time-Container\">
                                     <span class=\"time-bar\" style=\"width:";
                         // line 183
                         echo twig_escape_filter($this->env, sprintf("%0.2f", twig_get_attribute($this->env, $this->source, $context["query"], "executionPercent", [], "any", false, false, false, 183)), "html", null, true);
@@ -1295,8 +1295,8 @@ class __TwigTemplate_b7e9126015d23bb66fadfcca172ad9960b2af2030a56924277cf61ec91f
 
 {% block queries %}
     <style>
-        .time-container { position: relative; }
-        .time-container .nowrap { position: relative; z-index: 1; text-shadow: 0 0 2px #fff; }
+        .time-Container { position: relative; }
+        .time-Container .nowrap { position: relative; z-index: 1; text-shadow: 0 0 2px #fff; }
         .time-bar { display: block; position: absolute; top: 0; left: 0; bottom: 0; background: #e0e0e0; }
         .sql-runnable.sf-toggle-content.sf-toggle-visible { display: flex; flex-direction: column; }
         .sql-runnable button { align-self: end; }
@@ -1381,7 +1381,7 @@ class __TwigTemplate_b7e9126015d23bb66fadfcca172ad9960b2af2030a56924277cf61ec91f
                         {% set i = group_queries ? query.index : i %}
                         <tr id=\"queryNo-{{ i }}-{{ loop.parent.loop.index }}\">
                             {% if group_queries %}
-                                <td class=\"time-container\">
+                                <td class=\"time-Container\">
                                     <span class=\"time-bar\" style=\"width:{{ '%0.2f'|format(query.executionPercent) }}%\"></span>
                                     <span class=\"nowrap\">{{ '%0.2f'|format(query.executionMS * 1000) }}&nbsp;ms<br />({{ '%0.2f'|format(query.executionPercent) }}%)</span>
                                 </td>

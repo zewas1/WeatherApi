@@ -78,7 +78,7 @@ class __TwigTemplate_353a8f4aaeef23e77bf3106c7f221fef4e716c74e532c7383849cb484bc
         // line 93
         echo "    </div>
 
-    <div id=\"content\" class=\"container\">
+    <div id=\"content\" class=\"Container\">
         <div id=\"main\">
             <div id=\"sidebar\">
                 <div id=\"sidebar-shortcuts\">
@@ -262,7 +262,7 @@ class __TwigTemplate_353a8f4aaeef23e77bf3106c7f221fef4e716c74e532c7383849cb484bc
             // line 13
             echo twig_escape_filter($this->env, (isset($context["css_class"]) || array_key_exists("css_class", $context) ? $context["css_class"] : (function () { throw new RuntimeError('Variable "css_class" does not exist.', 13, $this->source); })()), "html", null, true);
             echo "\">
-                    <div class=\"container\">
+                    <div class=\"Container\">
                         <h2 class=\"break-long-words\">
                             ";
             // line 16
@@ -502,7 +502,7 @@ class __TwigTemplate_353a8f4aaeef23e77bf3106c7f221fef4e716c74e532c7383849cb484bc
                 {% set css_class = status_code > 399 ? 'status-error' : status_code > 299 ? 'status-warning' : 'status-success' %}
 
                 <div class=\"status {{ css_class }}\">
-                    <div class=\"container\">
+                    <div class=\"Container\">
                         <h2 class=\"break-long-words\">
                             {% if profile.method|upper in ['GET', 'HEAD'] %}
                                 <a href=\"{{ profile.url }}\">{{ profile.url }}</a>
@@ -583,7 +583,7 @@ class __TwigTemplate_353a8f4aaeef23e77bf3106c7f221fef4e716c74e532c7383849cb484bc
         {% endblock %}
     </div>
 
-    <div id=\"content\" class=\"container\">
+    <div id=\"content\" class=\"Container\">
         <div id=\"main\">
             <div id=\"sidebar\">
                 <div id=\"sidebar-shortcuts\">
@@ -642,6 +642,6 @@ class __TwigTemplate_353a8f4aaeef23e77bf3106c7f221fef4e716c74e532c7383849cb484bc
         }());
     </script>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\layout.html.twig");
     }
 }

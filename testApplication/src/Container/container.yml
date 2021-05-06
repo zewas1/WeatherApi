@@ -1,0 +1,9 @@
+parameters:
+  base_url: '%env(string:WEATHER_URL)%'
+  api: '%env(string:API_KEY)%'
+
+services:
+  weather_service:
+    class: App\Repository\ClientClass
+      arguments:
+        - '%base_url%'

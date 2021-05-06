@@ -41,7 +41,7 @@ class __TwigTemplate_069bd873a305894f39f19e731b46c6d9cc3674c521a5aa27b660c465680
 
         // line 1
         echo "<div id=\"header\">
-    <div class=\"container\">
+    <div class=\"Container\">
         <h1>";
         // line 3
         echo twig_include($this->env, $context, "@WebProfiler/Icon/symfony.svg");
@@ -84,7 +84,7 @@ class __TwigTemplate_069bd873a305894f39f19e731b46c6d9cc3674c521a5aa27b660c465680
     public function getSourceContext()
     {
         return new Source("<div id=\"header\">
-    <div class=\"container\">
+    <div class=\"Container\">
         <h1>{{ include('@WebProfiler/Icon/symfony.svg') }} Symfony <span>Profiler</span></h1>
 
         <div class=\"search\">
@@ -97,6 +97,6 @@ class __TwigTemplate_069bd873a305894f39f19e731b46c6d9cc3674c521a5aa27b660c465680
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "C:\\Users\\zewas\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "C:\\Users\\zewas\\app\\testApplication\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\header.html.twig");
     }
 }

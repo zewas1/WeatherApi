@@ -23,6 +23,6 @@ class ApiController
         $response = $communicator->postRequest($city);
         $json = $response->json();
 
-        return new JsonResponse(array('response data' => $json));
+        return new JsonResponse(array('response_data' => $json));
     }
 }

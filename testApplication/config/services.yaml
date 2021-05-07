@@ -45,3 +45,5 @@ services:
     App\Repository\Communicator:
         arguments:
             - '@App\Repository\Client'
+            - '@App\Repository\Response\Response'
+            - '@App\Repository\Response\Weather'

@@ -4,7 +4,6 @@
 namespace App\Repository;
 
 use GuzzleHttp\Client as HttpClient;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 
 class Client

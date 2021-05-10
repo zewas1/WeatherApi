@@ -6,8 +6,3 @@ index:
 apicall:
     path: /data
     controller: App\Controller\ApiController::new
-
-#test:
-#    path: /test
-#    controller:  App\Controller\testApiCall::newAction
-

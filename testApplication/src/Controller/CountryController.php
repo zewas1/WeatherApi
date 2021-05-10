@@ -8,28 +8,24 @@ use App\form\WeatherForm;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use App\Services\DataHandler;
 
 class CountryController extends AbstractController
 {
     public function new(Request $request): Response
     {
-        //$data = array();
         $country = new Country();
-        $form = $this->createForm(WeatherForm::class,$country);
+        $form = $this->createForm(WeatherForm::class, $country);
         $form->handleRequest($request);
         $city = $form ["city"]->getData();
-        //$api = $form ["api"]->getData();
 
-        if ($form->isSubmitted() && $form->isValid()){
-            return $this ->forward('App\Controller\ApiController::new',[
-                'city'=>[$city]
+        if ($form->isSubmitted() && $form->isValid()) {
+            return $this->forward('App\Controller\ApiController::new', [
+                'city' => [$city]
             ]);
-            //return $this ->redirectToRoute('apicall',['city'=>[$city], 'api'=>[$api]]);
         }
 
         return $this->render('task/new.html.twig', [
-            'form'=>$form->createView()
-            ]);
+            'form' => $form->createView()
+        ]);
     }
 }

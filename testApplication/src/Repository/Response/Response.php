@@ -3,9 +3,6 @@
 
 namespace App\Repository\Response;
 
-use Symfony\Component\Serializer\Annotation\SerializedName;
-use Symfony\Component\Serializer;
-
 class Response
 {
 

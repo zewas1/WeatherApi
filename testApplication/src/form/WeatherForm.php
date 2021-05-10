@@ -17,14 +17,14 @@ class WeatherForm extends AbstractType
         $builder
             ->add('city', TextType::class)
             ->add('api', TextType::class)
-            ->add('save', SubmitType::class, ['label' =>'save data']);
+            ->add('save', SubmitType::class, ['label' => 'save data']);
 
     }
 
-    public function configureOptions(OptionsResolver $resolver) : void
+    public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class'=>Country::class,
+            'data_class' => Country::class,
         ]);
     }
 }
